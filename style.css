@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, button, select, textarea {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  background:#E5E5E5;
+}
+/*::before ou after são aplicadas para definir um elemento antes ou depois*/
+body::before {
+  content: '';
+  width: 100%;
+  height: 436px;
+  
+  /*aplicado posição absoluta*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*O z-index permite estabelecer valores negativos para posicionar 
+  um elemento na tela. Usamos valores negativos para quando precisamos 
+  posicionar um desses elementos com menor prioridade 
+  entre os demais e fique em último na ordem de posicionamento da tela.*/
+  z-index: -1;
+  background:#535971;
+}
+/*aplicado tamanho total da caixa*/
+.page {
+  width: 750px;
+  margin: auto; 
+}
+
+/*Neste projeto aplicado o tamanho da caixa para h1 e p*/
+header {
+  width: 417px;
+  margin-top: 140px;
+}
+header h1 {
+  font-family: 'Staatliches';
+  color: #FFFFFF;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: normal;
+  margin-bottom: 18px;
+}
+header p {
+  /*Configuração peso de fonte normal=400 - bold=700 semi-bold=600*/
+  font-weight: 400;
+  /*Tamanho fonte*/
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+form {
+  /*Margin-top esta aplicando espaço entre o header e form*/
+  margin-top: 58px ;
+  /*cor de fundo do formulario*/
+  background: #E6E6F0;
+  /*esta aplicando altura minima*/
+  min-height: 300px;
+  /*border radius esta aplicando curva ou arredondamento da cx*/
+  border-radius: 20px 20px 0 0;
+  /*esta aplivando espaçamento de 64px em todos os lados*/
+  padding: 64px;
+ }
+ fieldset {
+  /*Remove a borda (Informações pessoais)*/
+  border: none;  
+ }
+ .fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+ }
+/*configurações lengende (Informações pessoais)*/
+ fieldset legend { 
+  /*Tipo da fonte aplicada*/
+  font-family: 'Staatliches';
+  /*Configuração peso de fonte normal=400 - bold=700 semi-bold=600*/
+  font-weight: 400;
+  /*Tamanho fonte*/
+  font-size: 24px;
+  /*controla o espaçamento entre as linhas de um texto*/
+  line-height: 34px; 
+  /*Cor fonte*/
+  color: #535971; 
+  /*Preenchimento da linha*/
+  width: 100%;
+  /*boder-bottom esta aplicando uma linha abaixo do texto (Informações pessoais)*/
+  border-bottom: 1px solid #b5b5bc;
+  /*Preenchimento abaixo do border bottom*/
+  padding-bottom: 16px;
+ }
+
+ .input-wrapper {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .input-wrapper label {
+  
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+  margin-bottom: 8px;
+ }
+
+ .input-wrapper label span {
+  margin-left: 9px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+ }
+ .input-wrapper label span:hover {
+
+  color: #867d9a;
+ }
+  .input-wrapper input {
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4a4a51;
+    
+  }
+
+.col-3{
+ display: flex;
+ gap: 16px;
+}
+
+.col-3 label {
+  width: 300px;
+} 
+/* css Seus horários disponíveis
+*/
+.col-4 {
+  display: flex;
+
+}
+.col-4 > div:nth-child(1){
+  width: 100%;
+}
+.col-4 .mentor-date {
+margin-right: 32px;
+}
+.col-4 .mento-das {
+  margin-right: 10px;
+}
+
+.fieldset-wrapper h2 {
+  font-family: 'Staatliches';
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+  color: #535971;
+}
+
+footer { 
+  background: #535971;
+  height: 160px;
+  
+display: flex;
+flex-direction: column;
+
+padding: 52px 71px;
+margin-bottom: 100px;
+
+border-radius: 0px 0px 20px 20px;
+
+}
+
+footer .button {
+width: 608px;
+height: 55px;
+border-radius: 20px;
+background: #FF5374;
+border: 0;
+
+font-family: 'Staatliches';
+
+font-size: 20px;
+line-height: 26px;
+font-weight: 400;
+color: #FFFFFF;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 15px 40px;
+gap: 10px;
+}
+
+footer .button:hover {
+  background: #ba3e57;
+
+}
+
+input:invalid {
+  border: 2px solid #FF1010 ;
+}
+
+legend {
+  margin: 32px 0 8px 0;
+}
